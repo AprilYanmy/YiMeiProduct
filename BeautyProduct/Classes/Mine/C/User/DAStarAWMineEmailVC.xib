@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DAMineEmailVC">
+            <connections>
+                <outlet property="btn_name" destination="IeK-Xj-NxW" id="sGf-0w-d9p"/>
+                <outlet property="tf_content" destination="HB2-DS-mFg" id="IFL-24-Vkc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6o-Kd-O0Q" customClass="BaseView">
+                    <rect key="frame" x="-1" y="15" width="377" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱地址" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HB2-DS-mFg">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5fy-VK-U9I"/>
+                        <constraint firstAttribute="bottom" secondItem="HB2-DS-mFg" secondAttribute="bottom" id="5ir-5Q-6eg"/>
+                        <constraint firstItem="HB2-DS-mFg" firstAttribute="top" secondItem="Z6o-Kd-O0Q" secondAttribute="top" id="8bg-E7-JeZ"/>
+                        <constraint firstAttribute="trailing" secondItem="HB2-DS-mFg" secondAttribute="trailing" id="Ptf-aQ-9IV"/>
+                        <constraint firstItem="HB2-DS-mFg" firstAttribute="leading" secondItem="Z6o-Kd-O0Q" secondAttribute="leading" id="l7I-0N-Bks"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.81632566449999999" green="0.77328944209999995" blue="0.71770763400000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeK-Xj-NxW" customClass="BaseButton">
+                    <rect key="frame" x="14" y="99" width="347" height="43.5"/>
+                    <color key="backgroundColor" red="0.28627450980000002" green="0.83921568629999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="绑定邮箱">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="backClick:" destination="-1" eventType="touchUpInside" id="2JV-xk-gWx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95687747001647949" green="0.95685696601867676" blue="0.95686101913452148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z6o-Kd-O0Q" secondAttribute="trailing" constant="-1" id="4BS-zg-0gF"/>
+                <constraint firstAttribute="trailing" secondItem="IeK-Xj-NxW" secondAttribute="trailing" constant="14" id="HAF-PT-hK1"/>
+                <constraint firstItem="IeK-Xj-NxW" firstAttribute="width" secondItem="IeK-Xj-NxW" secondAttribute="height" multiplier="349:44" id="Jvi-gx-68G"/>
+                <constraint firstItem="Z6o-Kd-O0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-1" id="K1j-xZ-b6m"/>
+                <constraint firstItem="Z6o-Kd-O0Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="LZH-V9-wwh"/>
+                <constraint firstItem="IeK-Xj-NxW" firstAttribute="top" secondItem="Z6o-Kd-O0Q" secondAttribute="bottom" constant="40" id="SPS-w5-xQu"/>
+                <constraint firstItem="IeK-Xj-NxW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="iiM-MU-lYt"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

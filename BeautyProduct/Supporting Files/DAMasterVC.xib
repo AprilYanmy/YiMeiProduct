@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DAMasterVC">
+            <connections>
+                <outlet property="mainView" destination="E0K-vj-edw" id="pa9-gc-FqJ"/>
+                <outlet property="scroll" destination="E0K-vj-edw" id="0Nb-jX-yJq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Kd2-zf-okG" id="IS9-Tf-hh9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0K-vj-edw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+                <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-zf-okG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="u6L-31-2vJ"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="E0K-vj-edw" secondAttribute="bottom" id="5XW-MI-w5j"/>
+                <constraint firstItem="Kd2-zf-okG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5o1-rS-QUl"/>
+                <constraint firstItem="Kd2-zf-okG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9mY-ik-F26"/>
+                <constraint firstItem="E0K-vj-edw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mii-Jg-Md5"/>
+                <constraint firstItem="E0K-vj-edw" firstAttribute="top" secondItem="Kd2-zf-okG" secondAttribute="top" id="Pi2-QE-Rvw"/>
+                <constraint firstAttribute="trailing" secondItem="Kd2-zf-okG" secondAttribute="trailing" id="bAd-98-Hut"/>
+                <constraint firstAttribute="bottom" secondItem="Kd2-zf-okG" secondAttribute="bottom" id="bSG-bm-CC7"/>
+                <constraint firstAttribute="trailing" secondItem="E0K-vj-edw" secondAttribute="trailing" id="kDe-x0-M4P"/>
+            </constraints>
+            <point key="canvasLocation" x="85" y="10"/>
+        </view>
+    </objects>
+</document>

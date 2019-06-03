@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DAMessageVC">
+            <connections>
+                <outlet property="noDataView" destination="hdN-hB-e5N" id="lAj-qo-pZ9"/>
+                <outlet property="scroll" destination="Ycf-FI-XBt" id="7tU-Sj-eQH"/>
+                <outlet property="tableView" destination="Ycf-FI-XBt" id="qro-M2-7EV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-FI-XBt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Flm-wi-WSy"/>
+                        <outlet property="delegate" destination="-1" id="RDX-6D-Ga7"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdN-hB-e5N">
+                    <rect key="frame" x="107" y="253" width="160" height="160"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noxiaoxi" translatesAutoresizingMaskIntoConstraints="NO" id="ho6-zY-eXv">
+                            <rect key="frame" x="34" y="0.0" width="92" height="107"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="92" id="GNH-13-Luc"/>
+                                <constraint firstAttribute="height" constant="107" id="Su2-oB-oYU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没有消息哦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlt-U1-16r">
+                            <rect key="frame" x="30.5" y="115" width="98" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快去使用我们的产品吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-vq-OQO">
+                            <rect key="frame" x="18.5" y="139.5" width="123" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.58358651399999995" green="0.5840438604" blue="0.58365732429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.958909452" green="0.95963555570000003" blue="0.95902186629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="6Lc-qH-ZqD"/>
+                        <constraint firstAttribute="width" constant="160" id="Hnn-KR-xiW"/>
+                        <constraint firstItem="zlt-U1-16r" firstAttribute="top" secondItem="ho6-zY-eXv" secondAttribute="bottom" constant="8" id="KHa-d3-jId"/>
+                        <constraint firstItem="ho6-zY-eXv" firstAttribute="top" secondItem="hdN-hB-e5N" secondAttribute="top" id="S4G-aC-xvi"/>
+                        <constraint firstItem="ho6-zY-eXv" firstAttribute="centerX" secondItem="hdN-hB-e5N" secondAttribute="centerX" id="eCb-OS-TrC"/>
+                        <constraint firstItem="ct8-vq-OQO" firstAttribute="centerX" secondItem="hdN-hB-e5N" secondAttribute="centerX" id="eW0-vl-b47"/>
+                        <constraint firstItem="ct8-vq-OQO" firstAttribute="top" secondItem="zlt-U1-16r" secondAttribute="bottom" constant="5" id="mSa-OC-hpq"/>
+                        <constraint firstItem="zlt-U1-16r" firstAttribute="centerX" secondItem="hdN-hB-e5N" secondAttribute="centerX" id="pfb-Qr-AvS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96079862117767334" green="0.96077799797058105" blue="0.96078205108642578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Ycf-FI-XBt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FVM-rO-f6f"/>
+                <constraint firstAttribute="bottom" secondItem="Ycf-FI-XBt" secondAttribute="bottom" id="W9I-hM-3PU"/>
+                <constraint firstItem="Ycf-FI-XBt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XKj-fV-jjO"/>
+                <constraint firstItem="hdN-hB-e5N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="apT-ye-NNd"/>
+                <constraint firstItem="hdN-hB-e5N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vaB-an-qwt"/>
+                <constraint firstAttribute="trailing" secondItem="Ycf-FI-XBt" secondAttribute="trailing" id="yTK-v3-kXq"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noxiaoxi" width="92" height="107"/>
+    </resources>
+</document>

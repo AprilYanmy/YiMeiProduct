@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DANewInstiitutCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jigou_cellBg" translatesAutoresizingMaskIntoConstraints="NO" id="ha3-1Q-IIL">
+                        <rect key="frame" x="14" y="14" width="292" height="114.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆光博士整形医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ns-lQ-rtd">
+                        <rect key="frame" x="28" y="28" width="264" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jigou_address" translatesAutoresizingMaskIntoConstraints="NO" id="pYu-lz-t3y">
+                        <rect key="frame" x="28" y="62" width="14" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="Qf3-ak-sEs"/>
+                            <constraint firstAttribute="width" constant="14" id="Sga-6W-PBe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆市江北区观音桥新上海大厦3楼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZv-zD-T78">
+                        <rect key="frame" x="50" y="61" width="242" height="16"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="擅长项目：嫩肤美白" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-cB-fpo">
+                        <rect key="frame" x="28" y="94.5" width="264" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0ns-lQ-rtd" firstAttribute="leading" secondItem="ha3-1Q-IIL" secondAttribute="leading" constant="14" id="0TY-du-tlj"/>
+                    <constraint firstItem="cZv-zD-T78" firstAttribute="leading" secondItem="pYu-lz-t3y" secondAttribute="trailing" constant="8" id="0lJ-LB-FVw"/>
+                    <constraint firstAttribute="trailing" secondItem="ha3-1Q-IIL" secondAttribute="trailing" constant="14" id="8tj-Qe-UB4"/>
+                    <constraint firstItem="NcR-cB-fpo" firstAttribute="trailing" secondItem="cZv-zD-T78" secondAttribute="trailing" id="C2y-0J-NY0"/>
+                    <constraint firstItem="ha3-1Q-IIL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Dz1-jp-KXV"/>
+                    <constraint firstAttribute="bottom" secondItem="ha3-1Q-IIL" secondAttribute="bottom" constant="2" id="E0B-AV-R4h"/>
+                    <constraint firstItem="cZv-zD-T78" firstAttribute="centerY" secondItem="pYu-lz-t3y" secondAttribute="centerY" id="OV0-my-Q2x"/>
+                    <constraint firstItem="NcR-cB-fpo" firstAttribute="bottom" secondItem="ha3-1Q-IIL" secondAttribute="bottom" constant="-18" id="RS3-yu-axH"/>
+                    <constraint firstItem="pYu-lz-t3y" firstAttribute="leading" secondItem="0ns-lQ-rtd" secondAttribute="leading" id="T9h-FC-wvi"/>
+                    <constraint firstItem="ha3-1Q-IIL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="WuT-rk-MLp"/>
+                    <constraint firstItem="0ns-lQ-rtd" firstAttribute="top" secondItem="ha3-1Q-IIL" secondAttribute="top" constant="14" id="Wzn-ka-7Ye"/>
+                    <constraint firstItem="pYu-lz-t3y" firstAttribute="top" secondItem="0ns-lQ-rtd" secondAttribute="bottom" constant="14" id="ejJ-w1-STl"/>
+                    <constraint firstItem="0ns-lQ-rtd" firstAttribute="trailing" secondItem="ha3-1Q-IIL" secondAttribute="trailing" constant="-14" id="hgr-3Q-9XM"/>
+                    <constraint firstItem="cZv-zD-T78" firstAttribute="trailing" secondItem="0ns-lQ-rtd" secondAttribute="trailing" id="ocd-po-cZQ"/>
+                    <constraint firstItem="NcR-cB-fpo" firstAttribute="leading" secondItem="pYu-lz-t3y" secondAttribute="leading" id="ocx-y6-8zv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lab_address" destination="cZv-zD-T78" id="Dsn-5F-U1d"/>
+                <outlet property="lab_name" destination="0ns-lQ-rtd" id="t7f-wu-NFT"/>
+                <outlet property="lab_product" destination="NcR-cB-fpo" id="ZLH-wj-L0i"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jigou_address" width="14" height="13"/>
+        <image name="jigou_cellBg" width="354" height="115"/>
+    </resources>
+</document>
